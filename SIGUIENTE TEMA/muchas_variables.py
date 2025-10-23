@@ -25,7 +25,7 @@ for dias in dias_semana: #para imprimir cada dato de la lista
     print(dias)
 for dias in range (len(dias_semana)): #lo mismo que arriba
     print(dias_semana[dias])
-for i in reversed (dias_semana): #para imprimir al revés la lista
+for i in reversed (dias_semana): #para imprimir al revés la lista  A SORAYA NO LE GUSTA (usa ::-1)
     print(i)
 
 print(dias_semana.index("Lunes")) #para saber la posición en la que está el dato en la lista
@@ -49,4 +49,6 @@ print(dias_semana[-len(dias_semana)])  #imprime solo lo primero de la lista porq
 print(dias_semana[:-len(dias_semana)]) #imprime todo eliminado 
 print(dias_semana[::-1]) #imprime la lista al revés
 print(dias_semana[:-1]) #imprime todos los elementos de la lista menos el último (resta los últimos elementos desde el principio) 
-                        # por eso print(dias_semana[:-2]) elimina los últimos 2
+print(dias_semana[i])                        # por eso print(dias_semana[:-2]) elimina los últimos 2
+for i in range(len(dias_semana)):
+    print(dias_semana[i])   
