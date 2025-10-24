@@ -6,7 +6,7 @@ while contador < 10:
     lista.append(num)
 print("La lista es: ", lista)
 
-maximo = max(lista)
+maximo = max(lista) # A SORAYA NO LE GUSTA
 minimo = min(lista)
 
 for numeros in lista:
@@ -16,3 +16,4 @@ for numeros in lista:
         print(numeros, "--> mínimo")
     else:
         print(numeros)
+

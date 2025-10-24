@@ -50,5 +50,3 @@ print(dias_semana[:-len(dias_semana)]) #imprime todo eliminado
 print(dias_semana[::-1]) #imprime la lista al revés
 print(dias_semana[:-1]) #imprime todos los elementos de la lista menos el último (resta los últimos elementos desde el principio) 
 print(dias_semana[i])                        # por eso print(dias_semana[:-2]) elimina los últimos 2
-for i in range(len(dias_semana)):
-    print(dias_semana[i])   
