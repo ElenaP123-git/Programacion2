@@ -5,6 +5,8 @@ while contador < 15:
     num = int(input("Introduce un número: "))
     contador +=1
     lista.append(num)
-print(lista)
+print("Lista oroginal:", lista)
 
-lista.insert(0,14)
+ultimo_elemento = lista.pop() 
+lista.insert(0, ultimo_elemento)
+print("Lista Rotada:", lista)
