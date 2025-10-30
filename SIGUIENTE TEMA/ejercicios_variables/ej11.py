@@ -1,18 +1,15 @@
 import random
-
-pares = []
 impares = []
+pares = []
 
-# Generar 20 números aleatorios entre 0 y 100
-numeros = [random.randint(0, 100) for i in range(20)]
-print("Lista original:", numeros)
+numeros = [random.randint(0,100) for i in range (20)] 
 
-for num in numeros:
+for num in numeros: # "para cada numero num dentro de la lista numeros"
     if num % 2 == 0:
         pares.append(num)
     else:
         impares.append(num)
+lista = pares + impares
 
-# Combinar pares primero, luego impares
-resultado = pares + impares
-print("Lista con pares primero:", resultado)
+print("Números generados:", numeros)
+print("Nueva lista: ", lista)
