@@ -1,4 +1,4 @@
-# digitos.py
+# digitos
 lista = []
 num = input("Introduce un número: ")
 for n in num:

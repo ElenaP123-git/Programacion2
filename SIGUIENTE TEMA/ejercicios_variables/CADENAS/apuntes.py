@@ -18,11 +18,10 @@ mensaje5a = mensaje5.find("Mundo") # find(): Busca la subcadena. Devuelve el ín
                                    # Si lo encuentra, devuelve un número >= 0. Si no lo encuentra, devuelve -1. (5)
 print(mensaje5a)
 
-mensaje8 = "HOLA MUNDO"
-mensaje8a = mensaje8.replace("L", "pizza")
-
 mensaje8 = "HOLA MUNDO LOS LUNES"
-mensaje8a = mensaje8.replace("L", "pizza") #cambia las L por "pizza" "HOpizzaA MUNDO"
+mensaje8 = mensaje8.replace("L", "pizza") #cambia las L por "pizza" "HOpizzaA MUNDO pizzaOS pizzaUNES"
+print(mensaje8)                           # las cadenas son inmutables, por lo que si pongo sólo mensaje.replace(algo) NO CAMBIA
+
 
 mensaje2a = 'Hola ' * 3 # Repite la cadena el número de veces especificado. "hola hola hola"
 mensaje8.lower() # pasar a minúsculas
@@ -34,3 +33,14 @@ lista = txt.split(',') # (split): Devuelve una lista de cadenas, dividiendo la c
 
 s = "Esto es una comilla doble \" de ejemplo" # las cadenas se crean con comillas pero como no sabe dónde termina, se pone \
 print(s)
+
+nombre = "elena"
+print(nombre)
+nombre = list(nombre) # para convertir una cadena(str) a lista [] 
+print(nombre) 
+nombre.insert(0,"A") #si quiero utilizar comandos para las listas en cadenas, tengo que convertir a lista
+print (nombre)
+cadenasalida = ""
+for valor in nombre: #paso de lista [] a cadena (str)
+  cadenasalida = cadenasalida + valor
+print(cadenasalida)

@@ -1,4 +1,4 @@
-#esCapicua.py (como le gusta a Soraya)
+#esCapicua (como le gusta a Soraya)
 numero = input("Introduce un número: ")
 invertido = ""
 
