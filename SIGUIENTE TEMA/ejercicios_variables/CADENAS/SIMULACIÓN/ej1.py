@@ -1,7 +1,7 @@
 clientes = []
 
 opcion = ""
-while True:
+while opcion != "G":
     print("==========================================================")
     print("Amazon Guzmanes - Menú de opciones")
     print("A) Añadir cliente")
@@ -52,9 +52,7 @@ while True:
             porcentaje_normales = normales * 100 / total
             print("Premium: " + str(round(porcentaje_premium, 2)) + "%")
             print("Normales: " + str(round(porcentaje_normales, 2)) + "%")
-
-    elif opcion == "G":
-        print("Saliendo del programa. ¡Hasta pronto!")
-        False
     else:
         print("Opción no válida. Intenta de nuevo.")
+if opcion == "G":
+    print("Saliendo del programa. ¡Hasta pronto!")

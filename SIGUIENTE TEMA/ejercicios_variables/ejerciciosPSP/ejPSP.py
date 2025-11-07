@@ -9,8 +9,8 @@ while opcion != "S":
     print("R. Registrar juegos")
     print("E. Mostrar estadísticas")
     print("S. Salir del programa")
-    print("P.Mejor puntuación")
-    print("D.Detalle de un juego")
+    print("P. Mejor puntuación")
+    print("D. Detalle de un juego")
     print("G. Filtrar por género")
     opcion = input("Opción: ")
     opcion = opcion.upper() #aquí es donde se introducen los nuevos datos de la variable vacía
