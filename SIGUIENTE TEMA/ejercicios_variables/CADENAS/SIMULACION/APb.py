@@ -1,12 +1,12 @@
-# Bucle principal
-# Control de bucle
 seguir = True
+lista = []
 
 while seguir:
     primero = int(input("Introduce el primer número: "))
     segundo = int(input("Introduce el segundo número: "))
 
     if primero == 0 and segundo == 0:
+        print("FIN")
         seguir = False
     else:
         while primero >= segundo:
@@ -20,7 +20,7 @@ while seguir:
 
         print("Impares que existen entre [", str(primero), " - ", str(segundo), "]:")
 
-        contador = 0
+        # help
         if tipo_intervalo == "A":
             inicio = primero + 1
             fin = segundo - 1
@@ -28,11 +28,10 @@ while seguir:
             inicio = primero
             fin = segundo
 
+        lista = []
         i = inicio
         while i <= fin:
             if i % 2 != 0:
-                print(i, end=", ")
-                contador = contador + 1
+                lista.append(i)
             i = i + 1
-
-        print("En total existen", contador, "números impares en el rango.")
+        print(lista)
