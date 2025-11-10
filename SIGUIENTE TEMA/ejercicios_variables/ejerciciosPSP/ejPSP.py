@@ -87,3 +87,4 @@ while opcion != "S":
 
     else:
         print("Opción no válida. Intenta de nuevo.")
+print("FIN")

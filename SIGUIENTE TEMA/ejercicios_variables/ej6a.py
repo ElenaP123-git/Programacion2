@@ -8,16 +8,14 @@ while contador < 10:
     lista.append (num)                        #                                     lista.append(numero)
 print("La lista es: ", lista)
 
-mayor = lista[0] #se inicializan las variables mayor y menor con el primer número de la lista
+mayor = lista[0] # todo se lee a partir del primer dato de la lista (los números de abajo)
 menor = lista[0]
 
-for numeros in lista: # se recorre cada número n de la lista
-    if numeros > mayor: #si n es mayor que el actual mayor, se actualiza
-        mayor=numeros 
-    elif numeros < menor: #si n es menor que el actual número, se actualiza
-        menor= numeros
-
-print(lista)
-print("El número mayor es: ", mayor)
-print("El número menor es: ", menor)
-
+for numeros in lista: # por cada numero introducido en la lista
+    if numeros > mayor: #si algún número es mayor que los otros
+        mayor=numeros  # ese número es el mayor
+    elif numeros < menor: #si algún número es menor que los otros
+        menor= numeros # ese número es el menor
+        
+print("El número mayor es: ", mayor)  
+print("El número menor es: ", menor) 

@@ -1,10 +1,12 @@
+# IMPORT RANDOM
+
 dias_semana = ["Lunes", "Martes","Miércoles","Jueves","Viernes","Sábado","Domingo"]
 print(dias_semana[6])
 
 import random
 lista_num = []
-for lista in range(0,5):
-    aleatorio = random.randint(0,8)
+for lista in range(5): # "para una lista de hasta 5 números"
+    aleatorio = random.randint(0,8) # "número aleatorio del 0 al 8"
     lista_num.append(aleatorio) #para introducir los datos aleatorios en la tabla
 print(lista_num)
 #OJITO
