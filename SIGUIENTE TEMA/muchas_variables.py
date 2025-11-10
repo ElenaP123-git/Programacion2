@@ -36,7 +36,7 @@ d = input("Introduce dia semana: ")
 if d in dias_semana:
     n = dias_semana.index(d) #en la lista nombres, se indica la posición coincidente con el nombre introducido
     print("El día", d, "se encuentra en la posición", n ) # print(dias_semana[n] ej PSP)
-    print(dias_semana[n])
+    print(dias_semana[n]) # lunes de la lista
 
 if "Lunes" in dias_semana: #para saber si tengo ese elemento en la lista
     print("lo tengo")
