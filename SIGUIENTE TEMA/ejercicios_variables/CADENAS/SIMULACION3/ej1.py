@@ -18,23 +18,20 @@ while opcion != "E":
         for i in range (a):
             aa = input(("Introduce el árbol: "))
             árboles.append(aa)
-            print("Lista generada: ", árboles)
+        print("Lista generada: ", árboles)
+
     elif opcion == "B":
-        d = input("Introduce el diámetro: ")
-        e = ("Introduce la edad: ")
-        alt = ("Introduce la altura: ")
-        if d < alt:
-            print("Brah, thats weird")
-            d = input("Introduce el diámetro: ")
-            e = ("Introduce la edad: ")
-            alt = ("Introduce la altura: ")
+        if len(árboles) == 0:
+            print("Primero debes introducir los árboles (opción A).")
         else:
-            diametro.append(d)
-            edad.append(e)
-            altura.append(alt)
-            print("Edad:", e, "años")
-            print("Diámetro:", d, "cm")
-            print("Altura: ", alt, "m")
+            for i in range(len(árboles)):
+                d = float(input("Introduce el diámetro: "))
+                e = int(input("Introduce la edad: "))
+                alt = float(input("Introduce la altura: "))
+                diametro.append(float(d))
+                edad.append(int(e))
+                altura.append(float(alt))
+
 
     elif opcion == "C":
         print("RESUMEN DATOS:")
@@ -44,10 +41,28 @@ while opcion != "E":
         print("Alturas guardadas (", len(altura), "): ", altura)
         
     elif opcion == "D":
-        print("La altura máxima es: ")
-        print("La altura mínima es: ")
-        print("La edad media para los de tipo B es")
-        print("Existen",len(árboles), "árboles en total de más de",edad)
-print("Fin del programa")
+        if len(altura) == 0:
+            print("La lista de alturas está vacía.")
+        else:
+            mayor = altura[0]
+            menor = altura[0]
+            for x in altura:
+                if x > mayor:
+                    mayor = x
+                elif x < menor:
+                    menor = x
+
+        # MEDIA EDAD
+        if len(edad) == 0:
+            print("No hay edades válidas para calcular la media.")
+        else:
+            total = 0
+            for i in range(len(edad)):
+                total += int(edad[i])  # Convertimos cada elemento a entero y los sumamos
+            media_edad = total / len(edad)
+            print("La edad media de los árboles es:", media_edad, "años")
 
 
+        print("La altura máxima es: ", mayor)
+        print("La altura mínima es: ", menor)
+        print("Existen", len(árboles), "árboles en total de más de", menor, "m")
