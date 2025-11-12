@@ -1,6 +1,6 @@
 letra = input("Introduce una letra: ")
 lista = []
-stop = True
+stop = True # ojito, que sin esto no furula
 
 while stop:
     list = input("Introduce palabtras, introduce STOP si quieres parar: ") .upper()
@@ -8,4 +8,8 @@ while stop:
         stop = False
     else:
         lista.append(list)
-print("Fin programa")
+
+print("La letra introducida es: ", letra)
+print("La lista de palabras es: ", lista, "y el número de palabras es: ", len(lista))
+
+
